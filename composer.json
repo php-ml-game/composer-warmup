@@ -1,0 +1,20 @@
+{
+    "name": "php-ml-game/composer-warmup",
+    "description": "Composer warmup for PHP ML games.",
+    "keywords": [],
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^2",
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpmlgame\\ComposerWarmup\\": "./src"
+        }
+    },
+    "prefer-stable": true
+}
