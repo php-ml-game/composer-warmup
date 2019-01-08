@@ -5,16 +5,19 @@
     "type": "library",
     "license": "proprietary",
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.2",
+        "php-ai/php-ml": "^0",
+        "symfony/options-resolver": "^1",
+        "symfony/polyfill-php73": "^4"
     },
     "require-dev": {
         "vimeo/psalm": "^2",
         "phpunit/phpunit": "^7"
     },
-    "autoload": {
-        "psr-4": {
-            "Phpmlgame\\ComposerWarmup\\": "./src"
-        }
-    },
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
     "prefer-stable": true
 }
